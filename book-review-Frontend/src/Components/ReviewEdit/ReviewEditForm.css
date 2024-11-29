@@ -1,0 +1,81 @@
+
+.review-edit-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #C06C84; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #F67280; 
+  }
+  
+  .review-edit-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #355C7D; /* text color */
+  }
+  
+ 
+  .review-edit-form input,
+  .review-edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #6C5B7B; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #355C7D; /*text color */
+  }
+  
+  .review-edit-form input:focus,
+  .review-edit-form textarea:focus {
+    border-color: #355C7D; /* focus border color */
+    outline: none;
+  }
+  
+  /* Styling for the form button */
+  .review-edit-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6C5B7B; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-edit-form button:hover {
+    background-color: #355C7D;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .review-edit-form {
+      padding: 15px;
+    }
+  
+    .review-edit-form input,
+    .review-edit-form textarea {
+      padding: 8px;
+    }
+  
+    .review-edit-form button {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .review-edit-form {
+      padding: 10px;
+    }
+  
+    .review-edit-form input,
+    .review-edit-form textarea {
+      padding: 6px;
+    }
+  
+    .review-edit-form button {
+      padding: 6px;
+    }
+  }
