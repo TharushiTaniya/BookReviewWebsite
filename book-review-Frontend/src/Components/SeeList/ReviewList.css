@@ -1,0 +1,166 @@
+
+.review-list-container {
+  margin: 20px auto;
+  max-width: 1200px; 
+  padding: 20px;
+  background-color: #807c7d;
+  border-radius: 8px;
+}
+
+
+.review-list-container h3 {
+  font-size: 1.5rem;
+  color: #355C7D; 
+  margin-bottom: 10px;
+}
+
+.review-list-container p {
+  font-size: 1rem;
+  color: #355C7D; 
+}
+
+
+.review-list-container button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  background-color: #6C5B7B; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-list-container button:hover {
+  background-color: #C06C84;
+}
+
+
+.review-controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-controls input[type="text"] {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #355C7D;
+  width: 60%;
+}
+
+.review-controls select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #355C7D;
+}
+
+.review-controls select:focus,
+.review-controls input[type="text"]:focus {
+  outline: none;
+  border-color: #355C7D;
+}
+
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+}
+
+
+.review-item {
+  padding: 15px;
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 187, 187, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.review-item h3 {
+  color: #355C7D;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.review-item p {
+  margin-bottom: 8px;
+  color: #355C7D;
+}
+
+/* Form Styling */
+.review-item form input,
+.review-item form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.review-item form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.review-item form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6C5B7B;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-item form button:hover {
+  background-color: #C06C84;
+}
+
+
+@media (max-width: 768px) {
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+
+  .review-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-controls input[type="text"],
+  .review-controls select {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .review-list-container {
+    padding: 10px;
+  }
+
+  .review-item {
+    padding: 10px;
+  }
+
+  .review-controls input[type="text"],
+  .review-controls select {
+    width: 100%;
+  }
+}
