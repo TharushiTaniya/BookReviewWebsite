@@ -1,0 +1,116 @@
+.add-review-bg{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../Assets/add-1.jpg') no-repeat center center/cover; 
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: Arial, sans-serif;
+
+
+}
+
+
+.review-form-container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 700px;  
+  width: 100%;  
+  background-color: #475765b5; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(60, 18, 18, 0.57);
+}
+
+.review-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.review-h1{
+  text-align: center;
+  color: #030b11; 
+}
+
+.review-form-container input,
+.review-form-container textarea,
+.review-form-container select,
+.review-form-container button {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #355C7D; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.review-form-container input:focus,
+.review-form-container textarea:focus,
+.review-form-container select:focus {
+  border-color: #355C7D; 
+  outline: none;
+}
+
+.review-form-container textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.review-form-container button {
+  background-color: #F67280; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form-container button:hover {
+  background-color: #C06C84; 
+}
+
+.review-form-container .message {
+  color: #355C7D; 
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .review-form-container {
+    padding: 15px;
+  }
+
+  .review-form-container input,
+  .review-form-container textarea,
+  .review-form-container select,
+  .review-form-container button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .review-form-container textarea {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-form-container {
+    padding: 10px;
+  }
+
+  .review-form-container input,
+  .review-form-container textarea,
+  .review-form-container select,
+  .review-form-container button {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .review-form-container textarea {
+    min-height: 100px;
+  }
+}
