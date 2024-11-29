@@ -1,0 +1,39 @@
+/* Home Container */
+.home-container {
+    padding: 20px;
+    background-color: #F67280; 
+  }
+  
+  .review-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .review-card {
+    border: 1px solid #C06C84; 
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    background-color: #6C5B7B; 
+    color: #355C7D; 
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .review-list-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-container {
+      padding: 10px;
+    }
+  
+    .review-card {
+      width: 100%;
+      padding: 12px;
+    }
+  }
